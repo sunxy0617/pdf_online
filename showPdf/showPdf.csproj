@@ -90,12 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="pdfJs\build\pdf.js" />
-    <Content Include="pdfJs\build\pdf.js.map" />
-    <Content Include="pdfJs\build\pdf.min.js" />
-    <Content Include="pdfJs\build\pdf.worker.js" />
-    <Content Include="pdfJs\build\pdf.worker.js.map" />
-    <Content Include="pdfJs\build\pdf.worker.min.js" />
+    <Content Include="pdfJs\pdfBuild\pdf.js" />
+    <Content Include="pdfJs\pdfBuild\pdf.js.map" />
+    <Content Include="pdfJs\pdfBuild\pdf.min.js" />
+    <Content Include="pdfJs\pdfBuild\pdf.worker.js" />
+    <Content Include="pdfJs\pdfBuild\pdf.worker.js.map" />
+    <Content Include="pdfJs\pdfBuild\pdf.worker.min.js" />
     <Content Include="pdfJs\web\cmaps\78-EUC-H.bcmap" />
     <Content Include="pdfJs\web\cmaps\78-EUC-V.bcmap" />
     <Content Include="pdfJs\web\cmaps\78-H.bcmap" />
