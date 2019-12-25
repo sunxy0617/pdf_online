@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 
 namespace showPdf.Controllers
 {
@@ -14,13 +16,19 @@ namespace showPdf.Controllers
         public ViewResult Index(string url)
         {
             byte[] data = downloadData(url);
-            ViewBag.data = data;
+            if (data == null)
+                ViewBag.data = "0";
+            else
+            {
+                var arrStr = String.Join(",", data);
+                ViewBag.data = "[" + arrStr + "]";
+            }
             return View();
         }
 
         private byte[] downloadData(string url)
         {
-            if (string.IsNullOrWhiteSpace(url)||!url.Contains("://"))
+            if (string.IsNullOrWhiteSpace(url) || !url.Contains("://"))
             {
                 return null;
             }

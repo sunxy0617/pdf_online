@@ -503,6 +503,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="pdfJs\web\showPdf.doc" />
+    <None Include="Properties\PublishProfiles\showPdf.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
